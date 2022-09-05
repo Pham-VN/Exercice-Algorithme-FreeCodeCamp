@@ -1,0 +1,25 @@
+//Reverse String
+function reverseString(str) {
+  // Step 1: Use the split() methode turn the string into array.
+  var arrayString = str.split('');
+  // Step 2: Use the reverse() methode to reverse and creat new array.
+  var reverseArray = arrayString.reverse();
+  // Step3: Use the joint() methode to join all elements turn the string into array.
+  var joinArray = reverseArray.joint('');
+  return joinArray;
+}
+
+reverseString("hello");
+
+// Tinh giao thua 
+
+function factorialize(num) {
+// if factorailize == 0, return 1
+ if (num == 0) {
+   return 1;
+ } else {
+ // dung phuong phap de quy
+   return num * factorialize(num-1);
+ }
+}
+factorialize(5)

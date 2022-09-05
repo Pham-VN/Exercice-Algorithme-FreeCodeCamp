@@ -23,3 +23,16 @@ function factorialize(num) {
  }
 }
 factorialize(5)
+
+// function findLongestWordLength(str) {
+  var split = str.split(' ');
+  var max = split[0].length;
+  for (let i = 0; i < split.length; i++) {
+      if(split[i].length > max) {
+          max = split[i].length;
+      }
+  }
+  return max;
+}
+
+findLongestWordLength("The quick brown fox jumped over the lazy dog");
